@@ -1,14 +1,14 @@
 <h1>Map my route!</h1>
 
-<form action='/team' method="POST">
-  Start: <select name="start"><br>
+<form action='/map' method="POST">
+  Start route: <select name="start"><br>
     <% @data.each do |station| %>
     <option value="<%= "#{station["lat"]}, #{station["lng"]}" %>">
     <%= station["name"] %></option>
     <% end %>
     </select><br>
   <br>
-  End: <select name="end"><br>
+  End route: <select name="end"><br>
     <% @data.each do |station| %>
     <option value="<%= "#{station["lat"]}, #{station["lng"]}" %>">
     <%= station["name"] %></option>

@@ -23,14 +23,14 @@ module Citibike
     end
 
     post '/form' do
-      @start = params['start']
-      @end = params['end']
+      @start = params["start"]
+      @end = params["end"]
       erb :form
     end
 
     post '/map' do
-      @start = params['start']
-      @end = params['end']
+      @start = params["start"]
+      @end = params["end"]
       erb :map
     end
 

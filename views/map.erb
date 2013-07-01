@@ -1,11 +1,9 @@
 <h1>MAP!</h1>
 
-<ul>
-  <li>Begin route: <%= @start%></li>
-  <li>End route: <%= @end%></li>
-</ul>
-
 <div id="map"></div>
+
+Begin route: <%= @start%><br>
+End route: <%= @end%><br>
 
 <script type="text/javascript" charset="utf-8">
   var map = L.map('map').setView([40.7142, -74.0064], 13);
