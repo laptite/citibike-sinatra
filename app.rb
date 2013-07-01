@@ -29,8 +29,8 @@ module Citibike
     end
 
     post '/map' do
-      @start = params["start"]
-      @end = params["end"]
+      @start = (params["start"].to_f/1000000).round(3)
+      @end = (params["end"].to_f/1000000).round(3)
       erb :map
     end
 
