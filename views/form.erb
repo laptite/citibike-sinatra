@@ -4,20 +4,18 @@
   
   Start route: <select name="start"><br>
     <% @data.each do |station| %>
-    <option value="<%= "#{station["lat"]}, #{station["lng"]}" %>">
-    <%= station["name"] %></option>
+    <option value="<%= "#{station["lat"]/1000000.0}, #{station["lng"]/1000000.0}" %>">
+    <%=station['name']%></option>
     <% end %>
     </select><br><br>
   
   End route: <select name="end"><br>
     <% @data.each do |station| %>
-    <option value="<%= "#{station["lat"]}, #{station["lng"]}" %>">
-    <%= station["name"] %></option>
+    <option value="<%= "#{station["lat"]/1000000.0}, #{station["lng"]/1000000.0}" %>">
+    <%=station['name']%></option>
     <% end %>
-    </select><br>
-  <br>
+    </select><br>  <br>
   
-  <input type="Submit" value="Submit route">
+  <input type="Submit" value="Submit route"><br>
+
 </form>
-
-

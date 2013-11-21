@@ -3,8 +3,8 @@
 
   <li>
   Station name: <%= "#{station['name']}" %><br>
-  Lat: <%= "#{station['lat']}" %><br>
-  Long: <%= "#{station['lng']}" %><br>
+  Lat: <%= "#{station['lat']/1000000.0}" %><br>
+  Long: <%= "#{station['lng']/1000000.0}" %><br>
   </li><br>
   <% end %>
 </ul>
